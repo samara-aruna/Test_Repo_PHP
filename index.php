@@ -27,18 +27,18 @@
              $f_number = $_POST["f_number"];
              $s_number = $_POST["s_number"];
 
-             print "<h1>Your name is $name your age is $age and your grade is $grade</h1><br>";
+             print "<h2>Your name is $name your age is $age and your grade is $grade</h2><br>";
              
              $Result = ($f_number + $s_number);
-             print "<h1>$Result</h1>";
+             print "<h2>$Result</h2>";
 
              if($Result>50)
              {
-                echo "<h1>You are Passed</h1>";
+                echo "<h2>You are Passed</h2>";
              }
              else
              {
-                print "<h1>You are Failed</h1>";
+                print "<h2>You are Failed</h2>";
              }
         ?>
     </body>
