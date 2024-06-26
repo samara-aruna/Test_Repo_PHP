@@ -30,8 +30,11 @@
              print "<h2>Your name is $name your age is $age and your grade is $grade</h2><br>";
              
              $Result = ($f_number + $s_number);
-             print "<h2>$Result</h2>";
+             $Resulr_min = ($f_number - $s_number);
 
+             print "<h2>$Result</h2>";
+             print "<h2> $Resulr_min</h2>";
+             
              if($Result>50)
              {
                 echo "<h2>You are Passed</h2>";
