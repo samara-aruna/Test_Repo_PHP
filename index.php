@@ -16,6 +16,14 @@
             Enter your Second Number : <input type="number" name="s_number"><br>
             <input type="submit" value="Add Numbers">
       </pre>
+      </form>
+      <form action='index.php' method='post'>
+           Enter your Marks for Maths : <input type="number" name="maths"><br>
+           Enter your Science Marks : <input type="number" name="science"><br>
+           Enter your ICT Marks : <input type="number" name ="ict"><br>
+           <input type="submit" value="result">
+      </form>
+
         <?php
              $name = "";
              $age = "";
@@ -44,5 +52,17 @@
                 print "<h2>You are Failed</h2>";
              }
         ?>
+        <?php
+           $Maths = $_POST["maths"];
+           $Science = $_POST["science"];
+           $Ict = $_POST["ict"];
+
+           $Total = ($Maths + $Science + $Ict);
+
+           $Percentage = ($Total / 300) * 100;
+           print "<h2> Total Marks :$Total</h2>";
+           print "<h2>Percentage : $Percentage</h2>";
+        ?>
+
     </body>
 </html>
