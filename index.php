@@ -1,46 +1,32 @@
 <?php
-print "Arun And Chthuni<br>";
 
-class MyClass
+
+$array = [1,2,3,4,5,6,7];
+print $array[1] . "<br/>";
+
+
+for($i=0;$i<count($array);$i++)
 {
-    public $name;
-    public $age;
-    public $Subjet;
-    public $marks;
+    print $array[$i];
+}
+print"<br>";
 
-    function __construct($inname,$inage,$insubject,$inmarks)
-    {
-        $this->name = $inname;
-        $this->age = $inage;
-        $this->Subject = $insubject;
-        $this ->marks = $inmarks;
 
-    } 
+print max($array);
 
-     function getName()
-    {
-        print $this -> name;  
-        print $this->age;
-        print $this->Subject; 
-        print $this->marks;
-    }
-
-    function setName($newName)
-    {
-        $this->name = $newName;
-    }
-
-    function setSubject($newSubject)
-    {
-        $this->Subject = $newSubject;
-    }
+function name($fname,$lname)
+{
+    print "<br> $fname  $lname";
 }
 
-$Aruna = new MyClass("Aruna",21,"Maths",70);
+name("Aruna","Samarasinghe");
 
-$Aruna->setName("Chathuni");
-$Aruna->setSubject("Science");
+function Agei($age)
+{
+    return $age;
+}
 
-print $Aruna ->getName();
+$Age = Agei("21"); 
 
+print "<br>".$Age;
 ?>
